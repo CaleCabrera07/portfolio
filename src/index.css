@@ -239,7 +239,7 @@ footer {
     margin: 0 5px;
 }
 
-.social ul li a .fa {
+.social ul li a i {
     font-size: 40px;
     color: #262626;
     line-height: 80px;
@@ -298,7 +298,7 @@ footer {
     box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
 }
 
-.social ul li:hover .fa {
+.social ul li:hover i {
     color: #fff;
 }
 
@@ -307,32 +307,32 @@ footer {
 }
 
 .social ul li:hover:nth-child(1) a {
-    background: #0e76a8;
+    background: #211f1f;
 }
 .social ul li:hover:nth-child(1) a:before {
-    background: #0e76a8;
+    background: #211f1f;
 }
 .social ul li:hover:nth-child(1) a:after {
+    background: #363333;
+}
+
+.social ul li:hover:nth-child(2) a {
+    background: #0e76a8;
+}
+.social ul li:hover:nth-child(2) a:before {
+    background: #0e76a8;
+}
+.social ul li:hover:nth-child(2) a:after {
     background: #1293cf;
 }
 
 .social ul li:hover:nth-child(3) a {
-    background: #00aced;
+    background: #211f1f;
 }
 .social ul li:hover:nth-child(3) a:before {
-    background: #097aa5;
+    background: #211f1f;
 }
 .social ul li:hover:nth-child(3) a:after {
-    background: #53b9e0;
-}
-
-.social ul li:hover:nth-child(2) a {
-    background: #211f1f;
-}
-.social ul li:hover:nth-child(2) a:before {
-    background: #211f1f;
-}
-.social ul li:hover:nth-child(2) a:after {
     background: #363333;
 }
 
@@ -364,7 +364,7 @@ footer {
         width: 180px;
         height: 80px;
     }
-    .social ul li a .fa {
+    .social ul li a i {
         font-size: 30px;
         color: #262626;
         line-height: 80px;
@@ -383,7 +383,7 @@ footer {
         width: 135px;
         height: 80px;
     }
-    .social ul li a .fa {
+    .social ul li a i {
         font-size: 25px;
         color: #262626;
         line-height: 80px;
@@ -422,7 +422,7 @@ footer {
         width: 80px;
         height: 80px;
     }
-    .social ul li a .fa {
+    .social ul li a i {
         font-size: 30px;
         color: #262626;
         padding-right: 40px;
@@ -438,7 +438,7 @@ footer {
         width: 60px;
         height: 40px;
     }
-    .social ul li a .fa {
+    .social ul li a i {
         font-size: 20px;
         color: #262626;
         line-height: 40px;
@@ -454,7 +454,7 @@ footer {
         width: 60px;
         height: 40px;
     }
-    .social ul li a .fa {
+    .social ul li a i {
         font-size: 20px;
         color: #262626;
         line-height: 40px;

@@ -1,9 +1,9 @@
 import logo from "./logo.png";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
-import github from "./github.png";
+import backend from "./tech/nodejs.png";
+import creator from "./tech/reactjs.png";
+import mobile from "./tech/typescript.png";
+import web from "./tech/html.png";
+import github from "./tech/github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -29,16 +29,17 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import threadsclone from "./threadsclone.png";
-import imagem from "./imagem.png";
-import figpro from "./figpro.png";
-import storeit from "./storeit.png";
-import arkanoid from "./arkanoid.png";
-import beats from "./beats.png";
-import geritch from "./geritch.png";
-import alanai from "./alanai.png";
-import quizmify from "./quizmify.png";
-import shoppy from "./shoppy.png";
+import threadsclone from "./projects/old/threadsclone.png";
+import imagem from "./projects/old/imagem.png";
+import figpro from "./projects/old/figpro.png";
+import storeit from "./projects/storeit.png";
+import arkanoid from "./projects/arkanoid.png";
+import beats from "./projects/old/beats.png";
+import geritch from "./projects/old/geritch.png";
+import alanai from "./projects/old/alanai.png";
+import quizmify from "./projects/old/quizmify.png";
+import lanwi from "./projects/lanwi.png";
+import tsl from "./projects/tsl.png";
 
 export {
   logo,
@@ -76,7 +77,8 @@ export {
   geritch,
   alanai,
   quizmify,
-  shoppy,
   storeit,
   arkanoid,
+  lanwi,
+  tsl,
 };

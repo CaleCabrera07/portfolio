@@ -19,7 +19,7 @@ const Hero = () => {
             Hi, I'm <span className='text-[#915EFF]'>Carlos</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-          Software Engineer | Seeking Front-end Developer Position
+          Software Engineer | Web and Mobile Developer
           </p>
           <motion.p
           variants={fadeIn("", "", 0.1, 1)}

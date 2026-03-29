@@ -1,33 +1,32 @@
-import React from 'react'
-
 const Footer = () => {
     return (
         <>
             <footer className="social">
             <ul>
+                {/* GitHub */}
+                <li>
+                    <a href="https://github.com/CaleCabrera07" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i className="fa-brands fa-github" aria-hidden="true"></i>
+                        <span> - GitHub</span>
+                    </a>
+                </li>
                 {/* LinkedIN */}
                 <li>
                     <a
                         href="https://www.linkedin.com/in/carloscabrerasemidey/"
                         target="_blank"
+                        rel="noopener noreferrer"
                         aria-label="LinkedIn"
                     >
-                        <i className="fa fa-linkedin" aria-hidden="true"></i>
+                        <i className="fa-brands fa-linkedin" aria-hidden="true"></i>
                         <span> - LinkedIn</span>
                     </a>
                 </li>
-                {/* GitHub */}
+                {/* X - Twitter */}
                 <li>
-                    <a href="https://github.com/CaleCabrera07" target="_blank" aria-label="GitHub">
-                        <i className="fa fa-github" aria-hidden="true"></i>
-                        <span> - GitHub</span>
-                    </a>
-                </li>
-                {/* Twitter */}
-                <li>
-                    <a href="https://twitter.com/CaleCabrera07" target="_blank" aria-label="X">
-                        <i className="fa fa-twitter" aria-hidden="true"></i>
-                        <span> - Twitter</span>
+                    <a href="https://x.com/calecabrera07" target="_blank" rel="noopener noreferrer" aria-label="X">
+                        <i className="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                        <span> - X/Twitter</span>
                     </a>
                 </li>
                 {/* Instagram */}
