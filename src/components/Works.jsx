@@ -28,7 +28,7 @@ const ProjectCard = ({
           <div className="relative w-full h-[230px]">
             <img
               src={image}
-              alt="project_image"
+              alt={`${name} project screenshot`}
               className="w-full h-full object-cover object-center rounded-2xl"
             />
             <div className="absolute top-3 right-3 flex items-center gap-1.5 bg-black bg-opacity-60 backdrop-blur-sm px-3 py-1 rounded-full">

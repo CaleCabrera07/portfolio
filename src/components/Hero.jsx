@@ -5,9 +5,9 @@ import { styles } from "../styles";
 
 const Hero = () => {
   return (
-    <section className="relative w-full min-h-[100vh] mx-auto" id="home">
+    <section className="relative w-full min-h-[100vh] mx-auto flex items-center" id="home">
       <div
-        className={`relative top-[100px] md:top-[150px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5 pb-20`}
+        className={`w-full max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5 py-32`}
       >
         <div className="flex flex-col justify-center items-center mt-5 shrink-0">
           <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
@@ -15,8 +15,8 @@ const Hero = () => {
         </div>
 
         <div className="min-w-0">
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            We Build Software <span className="text-[#915EFF]">That Works</span>
+          <h1 className="font-black text-white lg:text-[64px] sm:text-[44px] xs:text-[34px] text-[28px] lg:leading-[76px] leading-[1.3] mt-2">
+            You Don't Need to Understand the Code. <span className="text-[#915EFF]">We do it for you.</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             Full-Stack Development Studio for Small Businesses
