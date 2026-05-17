@@ -12,6 +12,9 @@
   "engines": {
     "node": ">=22 <25"
   },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild", "react-vertical-timeline-component"]
+  },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@react-three/drei": "^9.56.24",

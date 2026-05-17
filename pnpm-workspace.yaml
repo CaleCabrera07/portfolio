@@ -1,6 +1,0 @@
-allowBuilds:
-  esbuild: true
-  react-vertical-timeline-component: true
-onlyBuiltDependencies:
-  - esbuild
-  - react-vertical-timeline-component
