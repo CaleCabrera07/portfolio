@@ -2,45 +2,41 @@ import { lanwi, tsl, storeit, arkanoid } from "../assets";
 
 export const projects = [
   {
-    name: "Lanwi",
+    name: "⭐ Lanwi",
     description:
-      "Lanwi is an all-in-one language laboratory. The idea is simple: everything you need to go from complete beginner to confident speaker, in one place, without switching tabs, paying three subscriptions, or running out of material. Feel free to explore and try it out!",
+      "A complete language learning platform built to replace multiple subscriptions with one seamless experience. Designed for retention and engagement, Lanwi takes learners from zero to confident speaker without switching tools.",
     tags: [
       {
-        name: "Auth",
+        name: "Language Learning",
         color: "blue-text-gradient",
       },
       {
-        name: "SSR",
+        name: "SaaS Platform",
         color: "green-text-gradient",
       },
       {
-        name: "SEO",
+        name: "Personalized UX",
         color: "orange-text-gradient",
-      },
-      {
-        name: "Personalized Learning",
-        color: "pink-text-gradient",
       },
     ],
     image: lanwi,
     source_code_link: "https://lanwi.app/",
   },
   {
-    name: "The Soccer Lab",
+    name: "⚽ The Soccer Lab",
     description:
-      "Soccer academy management platform designed to help coaches and administrators manage players, matches, etc and performance data efficiently. It provides a centralized, easy-to-use system for tracking development, communication, and operations within the academy.",
+      "A management platform built for soccer academies to eliminate spreadsheets and scattered communication. Coaches and admins get a single system to track players, manage matches, and monitor performance, saving hours every week.",
     tags: [
       {
-        name: "Role-Based Access",
+        name: "Academy Management",
         color: "blue-text-gradient",
       },
       {
-        name: "Analytics",
+        name: "Player Analytics",
         color: "orange-text-gradient",
       },
       {
-        name: "Team Management",
+        name: "Role-Based Access",
         color: "pink-text-gradient",
       },
     ],
@@ -48,45 +44,41 @@ export const projects = [
     source_code_link: "https://www.thesoccerlab.pro/",
   },
   {
-    name: "StoreIt",
+    name: "📂 StoreIt",
     description:
-      "Storage management platform designed to help you manage your documents, images, and files efficiently. It provides a secure and easy-to-use interface to manage your files online similar to Google Drive/Dropbox/OneDrive.",
+      "A secure cloud storage solution for businesses that need a simple, reliable way to manage and share documents online. Built with enterprise-grade security and a clean interface that any team member can use without training.",
     tags: [
       {
-        name: "Auth",
+        name: "Cloud Storage",
         color: "blue-text-gradient",
       },
       {
-        name: "File Uploads",
+        name: "Secure Sharing",
         color: "green-text-gradient",
       },
       {
-        name: "Search",
+        name: "File Management",
         color: "orange-text-gradient",
-      },
-      {
-        name: "Secure Sharing",
-        color: "pink-text-gradient",
       },
     ],
     image: storeit,
     source_code_link: "https://cc-storeit.vercel.app/",
   },
   {
-    name: "Arkanoid",
+    name: "🎮 Arkanoid",
     description:
-      "Classic arcade game where players control a paddle to bounce a ball and break bricks. Arkanoid offers a nostalgic yet challenging experience for gamers of all ages. Built with HTML5 Canvas and JavaScript.",
+      "A fully playable browser-based arcade game built to demonstrate that great UX and high performance apply beyond business software. If we can make this feel smooth and fun, we can make your product feel the same way.",
     tags: [
       {
-        name: "Game Loop",
+        name: "Browser Game",
         color: "blue-text-gradient",
       },
       {
-        name: "Score Tracking",
+        name: "Interactive UX",
         color: "orange-text-gradient",
       },
       {
-        name: "Responsive Canvas",
+        name: "Zero Install",
         color: "pink-text-gradient",
       },
     ],

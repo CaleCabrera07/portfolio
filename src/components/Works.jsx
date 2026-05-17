@@ -29,21 +29,27 @@ const ProjectCard = ({
             <img
               src={image}
               alt="project_image"
-              className="w-full h-full object-center rounded-2xl"
+              className="w-full h-full object-cover object-center rounded-2xl"
             />
+            <div className="absolute top-3 right-3 flex items-center gap-1.5 bg-black bg-opacity-60 backdrop-blur-sm px-3 py-1 rounded-full">
+              <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
+              <span className="text-white text-[12px] font-medium">Live</span>
+            </div>
           </div>
           <div className="mt-5">
             <h3 className="text-white font-bold text-[24px]">{name}</h3>
             <p className="mt-2 text-secondary text-[14px]">{description}</p>
           </div>
-          <div className="mt-4 flex flex-wrap just gap-2">
+          <div className="mt-4 flex flex-wrap gap-2">
             {tags.map((tag) => (
-              <p
+              <span
                 key={`${name}-${tag.name}`}
-                className={`text-[14px] ${tag.color}`}
+                className="bg-primary bg-opacity-60 border border-white border-opacity-10 rounded-full px-3 py-1"
               >
-                #{tag.name}
-              </p>
+                <span className={`text-[12px] font-medium ${tag.color}`}>
+                  {tag.name}
+                </span>
+              </span>
             ))}
           </div>
         </Tilt>
@@ -56,7 +62,7 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>My work</p>
+        <p className={`${styles.sectionSubText} `}>Our Work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects</h2>
       </motion.div>
 
@@ -65,11 +71,9 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
+          A selection of products we have designed, built, and shipped. From SaaS platforms
+          to management tools and interactive experiences, each project is live, real, and
+          built end-to-end by CaleCode.
         </motion.p>
       </div>
 

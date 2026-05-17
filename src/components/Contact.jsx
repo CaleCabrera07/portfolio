@@ -15,6 +15,8 @@ const Contact = () => {
   });
 
   const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
 
   const handleChange = (e) => {
     const { target } = e;
@@ -36,7 +38,7 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "Carlos Cabrera Semidey",
+          to_name: "CaleCode",
           from_email: form.email,
           to_email: "calesecond@gmail.com",
           message: form.message,
@@ -46,19 +48,13 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
-
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
+          setSuccess(true);
+          setForm({ name: "", email: "", message: "" });
         },
-        (error) => {
+        (err) => {
           setLoading(false);
-          console.error(error);
-
-          alert("Ahh, something went wrong. Please try again.");
+          console.error(err);
+          setError(true);
         }
       );
   };
@@ -69,8 +65,11 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact</h3>
+        <p className={styles.sectionSubText}>Let's Build Something</p>
+        <h3 className={styles.sectionHeadText}>Start a Project</h3>
+        <p className="mt-3 text-secondary text-[17px] leading-[30px]">
+          Tell us what you're working on.
+        </p>
 
         <form
           ref={formRef}
@@ -85,6 +84,7 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="What's your name?"
+              required
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
@@ -96,6 +96,7 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="What's your email address?"
+              required
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
@@ -107,6 +108,7 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder="What you want to say?"
+              required
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
@@ -117,6 +119,17 @@ const Contact = () => {
           >
             {loading ? "Sending..." : "Send"}
           </button>
+
+          {success && (
+            <p className="text-green-400 text-[14px] font-medium">
+              Thank you. We will get back to you as soon as possible.
+            </p>
+          )}
+          {error && (
+            <p className="text-red-400 text-[14px] font-medium">
+              Something went wrong. Please try again.
+            </p>
+          )}
         </form>
       </motion.div>
     </div>

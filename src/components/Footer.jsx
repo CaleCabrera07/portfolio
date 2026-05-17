@@ -2,6 +2,9 @@ const Footer = () => {
     return (
         <>
             <footer className="social">
+            <p className="text-secondary text-center text-[13px] pb-2 tracking-wide">
+              © {new Date().getFullYear()} CaleCode Inc. All rights reserved.
+            </p>
             <ul>
                 {/* GitHub */}
                 <li>

@@ -1,20 +1,18 @@
-import { mobile, backend, creator, web } from "../assets";
-
 export const services = [
   {
-    title: "Frontend Developer",
-    icon: web,
+    title: "Web Development",
+    icon: "fa-solid fa-globe",
   },
   {
-    title: "Backend Developer",
-    icon: backend,
+    title: "Mobile Development",
+    icon: "fa-solid fa-mobile-screen",
   },
   {
-    title: "Full Stack Developer",
-    icon: mobile,
+    title: "SaaS & Product Building",
+    icon: "fa-solid fa-layer-group",
   },
   {
-    title: "Lifelong learner",
-    icon: creator,
+    title: "Tech Consulting",
+    icon: "fa-solid fa-lightbulb",
   },
 ];
